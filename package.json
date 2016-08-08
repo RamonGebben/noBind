@@ -1,0 +1,27 @@
+{
+  "name": "no-bind",
+  "version": "0.1.0",
+  "description": "No more `bind` in JSX",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamonGebben/noBind.git"
+  },
+  "keywords": [
+    "bind",
+    "jsx"
+  ],
+  "author": "Ramon Gebben <ramon@ra-ge.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamonGebben/noBind/issues"
+  },
+  "homepage": "https://github.com/RamonGebben/noBind#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
