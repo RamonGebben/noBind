@@ -1,18 +1,14 @@
+'use strict';
 
-function a2a(args) {
-  return Array.prototype.slice.call(args);
-}
+function noBind(fn) {
+  if (typeof fn !== 'function') {
+    throw new TypeError('noBind - what is trying to be bound is not callable');
+   }
 
-function noBind() {
-  const args = a2a(arguments);
-  const fn = args[0];
-  args.splice(0, 1);
+  const aArgs = Array.prototype.slice.call(arguments, 1);
 
   return function call() {
-    const args2 = a2a(arguments);
-	  const merged = [].concat(args)
-      .concat(args2);
-
+	  const merged = aArgs.concat(Array.prototype.slice.call(arguments))
     return fn.apply(fn, merged);
   }
 }

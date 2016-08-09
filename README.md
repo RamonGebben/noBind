@@ -1,6 +1,12 @@
 # noBind
 
-No more `bind` in JSX
+No more `bind` in JSX.
+
+## Motivation
+
+The reason why I started building this little utility was lead by one of the rules applied in the [React eslint config of Airbnb](https://github.com/airbnb/javascript/tree/master/react#methods).
+There they point out that when using `.bind` inside of your `render` method will make the amount of memory used by your app bigger with each "rerender".
+This is because `.bind` return a copy of the that bound function. This utility gives you the same behavior as `.bind` would without making a copy of your function. As so be more memory efficient.
 
 ## Usage
 
