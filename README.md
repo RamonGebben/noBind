@@ -1,5 +1,9 @@
 # noBind
 
+[![Package Quality](http://npm.packagequality.com/shield/no-bind.svg)](http://packagequality.com/#?package=no-bind)
+[![Build Status](https://travis-ci.org/RamonGebben/noBind.svg?branch=master)](https://travis-ci.org/RamonGebben/noBind)
+[![npm version](https://badge.fury.io/js/no-bind.svg)](https://badge.fury.io/js/no-bind)
+
 No more `bind` in JSX.
 
 ## Motivation
